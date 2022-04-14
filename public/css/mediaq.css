@@ -165,18 +165,31 @@
 }
 /* =============contact section================= */
 
-    .main_contact {
-        height: auto;
-    }
-    .contact_head {
-        height: auto;
-    }
+.main_contact {
+    height: auto;
+}
+.contact_head {
+    height: auto;
+}
+.left_con {
+    height: auto;
+    display: flex;
+justify-content: center;
+}
+.left_con_child{
+    height: auto;
+}
+.right_con_child{
+    height: auto;
+}
+.right_con {
+    height: auto;
+}
+
     .sub-title{
         font-size: 2rem !important;
     }
-    .left_con {
-        height: auto;
-    }
+   
    
     label {
         color: grey;
@@ -202,7 +215,7 @@
         margin-right:3rem;
     }
     .bottom_con {
-        padding: 3rem;
+        padding:2rem 0 5rem 0;
     }
     .head_bull {
         font-size: 4rem;
@@ -405,17 +418,12 @@
     .main_contact {
         height: auto;
     }
-    .contact_head {
-        height: auto;
-    }
-    
+   
 
     .message {
         height: 7.5rem;
         width: 15rem;
     }
-
-    /* --------contact----- */
     
     .contact_head {
         height: auto;
