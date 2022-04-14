@@ -38,7 +38,7 @@
         height: auto;
     }
     .left_abt {
-        height: 50vh;
+        height: auto;
         width: 80%;
     }
 
@@ -128,7 +128,8 @@
         font-size: 4rem;
     }
     .right_abt {
-        height: 35vh;
+        height: auto;
+
     }
     .right_abt .sub_heading{
         font-size: 4rem;
@@ -165,16 +166,16 @@
 /* =============contact section================= */
 
     .main_contact {
-        height: 150vh;
+        height: auto;
     }
     .contact_head {
-        height: 130vh;
+        height: auto;
     }
     .sub-title{
         font-size: 2rem !important;
     }
     .left_con {
-        height: 65vh;
+        height: auto;
     }
    
     label {
@@ -199,6 +200,9 @@
         width: 100%;
         height:9rem;
         margin-right:3rem;
+    }
+    .bottom_con {
+        padding: 3rem;
     }
     .head_bull {
         font-size: 4rem;
@@ -284,9 +288,14 @@
     .qualities {
         font-size: 2rem;
     }
+    .left_abt {
+        height: auto;
+        margin: 3rem 0; 
+
+    }
 
     .center_abt {
-        height: 80vh;
+        height: auto;
     }
 
     .center_abt div .know_me {
@@ -294,20 +303,29 @@
     }
 
     .right_abt {
-        margin-bottom: 3rem 0; 
+        height: auto;
+        margin: 3rem 0; 
     }
     
     .main_contact {
-        height: 170vh;
+        height: auto;
     }
     .contact_head {
-        height: 130vh;
+        height: auto;
     }
     .left_con {
-        height: 70vh;
+        height: auto;
+        display: flex;
+    justify-content: center;
+    }
+    .left_con_child{
+        height: auto;
+    }
+    .right_con_child{
+        height: auto;
     }
     .right_con {
-        height: 55vh;
+        height: auto;
     }
 
     .message {
@@ -385,10 +403,10 @@
     }
     /* ======================contact======================= */
     .main_contact {
-        height: 170vh;
+        height: auto;
     }
     .contact_head {
-        height: 130vh;
+        height: auto;
     }
     
 
@@ -400,10 +418,10 @@
     /* --------contact----- */
     
     .contact_head {
-        height: 130vh;
+        height: auto;
     }
     .left_con {
-        height: 70vh;
+        height: auto;
     }
    
     .head_con{
@@ -426,6 +444,9 @@
         width: 15rem;
         height:9rem;
         margin-right:3rem;
+    }
+    .bottom_con {
+        padding: 3rem;
     }
 
     /* --------footer----- */

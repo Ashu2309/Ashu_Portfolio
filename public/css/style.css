@@ -1088,7 +1088,7 @@ div .row {
 /* --------------------Contactus-----------------z */
 
 .main_contact {
-    height: 110vh;
+    height: auto;
     width: 100%;
 }
 
@@ -1102,8 +1102,12 @@ div .row {
 } */
 
 .left_con {
+    
     height: calc(100vh - 30vh);
     width: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: end;
     
 }
 .left_con_child{
@@ -1139,7 +1143,7 @@ box-shadow: 0px 0px 38px -10px rgba(138,134,138,1);
 .head_con{
     color: var(--main-color);
     font-size: 3rem;
-    margin-bottom: 3rem;
+    margin: 3rem 0;
 }
 .left_contact_side div{
     width: 100%;
