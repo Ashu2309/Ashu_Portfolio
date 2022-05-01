@@ -83,6 +83,7 @@ button a {
 .nav-link {
     color: white !important;
     font-size: 1.8rem;
+    font-weight: 350;
     text-decoration: none;
 
 }
@@ -97,7 +98,8 @@ li.active::after, li a:hover::after {
     content: "";
     height: 0.3rem;
     width: 30%;
-    background: var(--gradient);
+    background:rgb(28, 205, 240) ;
+    /* box-shadow: 0 2px 3px rgb(78, 234, 234); */
     animation: appear 0.5s linear;
     left: 2.5rem;
     top: 99%;
@@ -227,11 +229,15 @@ li.active::after, li a:hover::after {
 }
 
 .image_pfp {
-    height: 30rem;
-    width: 20rem;
+    height: 100%;
+    width: 100%;
     -webkit-box-shadow: 0px 0px 20px -1px rgba(14, 205, 230, 1);
     -moz-box-shadow: 0px 0px 20px -1px rgba(14, 205, 230, 1);
     box-shadow: 0px 0px 20px -1px rgba(14, 205, 230, 1);
+    border-left:0.7rem solid rgb(75, 137, 238);
+    border-bottom:0.7rem solid rgb(75, 137, 238);
+    border-radius: 1rem;
+
     /* animation: zoom_pfp 10s infinite linear; */
     /* position: relative; */
 }
@@ -264,15 +270,15 @@ li.active::after, li a:hover::after {
 }
 .figure_pfp::before{
     content: "";
-    height: 32rem;
-    width: 22rem;
+    height: 100%;
+    width: 100%;
     /* border-right: 4px solid grey; */
     background:var(--gradient);
     z-index: -5;
     opacity: 0.8;
     position: absolute;
-    top: -1rem;
-    right: -1rem;
+    top: -1.3rem;
+    right: -1.3rem;
 }
 
 /* ----------------About us------------- */
@@ -297,7 +303,7 @@ li.active::after, li a:hover::after {
     width: 100%;
     background-size: 100% 100%;
     border-radius: 10px;
-    background: #e0e0e0;
+    background: var(--gradient) !important;
     box-shadow:  23px 23px 45px #afafaf,
                  -23px -23px 45px #ffffff;
     /* position: relative; */
@@ -482,7 +488,7 @@ li.active::after, li a:hover::after {
 
 .far {
     color: white;
-    text-shadow: 2px 3px 3px rgba(0, 101, 160, 0.7);
+    text-shadow: 2px 3px 3px rgba(0, 10%,1, 160, 0.7);
 }
 
 
@@ -498,14 +504,23 @@ li.active::after, li a:hover::after {
     justify-content: center;
     align-items: center;
 }
-
+.child_card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .card {
     margin: 1rem 0;
     width: 23rem;
     height: 10rem;
-    border-bottom: 0.5rem solid rgb(132, 144, 255) !important;
+    /* border-bottom: 0.5rem solid hsl(142,90%,61%) !important; */
+    border-bottom: 0.5rem solid rgb(53, 124, 231) !important;
+    box-shadow: 0px 5px 10px rgb(135, 233, 248) !important;
+
     /* background-image: linear-gradient(to right, rgb(255, 255, 255, 0.2), rgb(255, 255, 255, 0.2)); */
     display: flex;
+    background-image:linear-gradient(178deg, rgba(198, 228, 241, 0.8) 0%, rgba(232, 242, 248, 0.8) 92%),url("/images/card_bg.jpeg");
+    background-size: 100% 100%;
     align-items: flex-start;
     justify-content: center;
     padding: 2rem 0.2em;
@@ -517,6 +532,7 @@ box-shadow:  6px 6px 29px #afbec7,
     transition: all 1s;
     overflow: hidden;
 }
+
 
 .card::before {
     content: "";
@@ -543,7 +559,9 @@ box-shadow:  6px 6px 29px #afbec7,
     display: flex;
     justify-content: space-around;
     align-items: center;
+    color: #000;
     font-size: 2rem;
+    font-weight: 800;
 }
 
 .heading {
@@ -584,7 +602,7 @@ box-shadow:  6px 6px 29px #afbec7,
     padding: 0.5rem 0.5rem;
     margin: 0 2rem;
     /* color: var(--main-color) !important; */
-    border: 3px solid var(--main-bgcolor);
+    border: 3px solid rgb(53, 124, 231);
     height: 4rem;
     width: 4rem;
     border-radius: 1rem;
@@ -782,7 +800,10 @@ div .row {
     margin: 4rem;
     height: 30rem;
     width: 25rem;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
+    background: linear-gradient(to top ,rgba(198, 228, 241, 0.8), rgba(232, 242, 248, 0.8)),url("https://i.pinimg.com/originals/10/16/43/1016435fb26f16d335b95fe7ffe17d66.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     box-shadow: 0px 0px 34px -12px rgba(94, 109, 122, 0.75);
     -webkit-box-shadow: 0px 0px 34px -12px rgba(94, 109, 122, 0.75);
     -moz-box-shadow: 0px 0px 34px -12px rgba(94, 109, 122, 0.75);
@@ -793,7 +814,7 @@ div .row {
     border-radius: 1rem;
     position: relative;
     z-index: 1;
-    border-bottom: 0.5rem solid rgb(132, 144, 255);
+    border-bottom: 0.7rem solid rgb(132, 144, 255);
     cursor: pointer;
     overflow: hidden;
 }
@@ -973,7 +994,7 @@ div .row {
     text-decoration: none;
     transition: all 0.5s linear;
     transform: translateX(-11rem);
-    border-radius: 0.5rem;
+    /* border-radius: 0.5rem; */
 
 
 }
@@ -1219,7 +1240,7 @@ input:-webkit-autofill {
 }
 
 .head_bull {
-    color: #fff;
+    color: greenyellow;
 }
 
 .bullets {

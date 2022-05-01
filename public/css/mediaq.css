@@ -65,19 +65,12 @@
     }
 
 
-    .image_pfp {
-        height: 35rem;
-        width: 35rem;
-    }
 
     .figure_pfp {
         height: 36rem;
         width: 37rem;
     }
-    .figure_pfp::before{
-        height: 38rem;
-        width: 39rem;
-    }
+   
 
     /* ===============================About========================== */
 
@@ -380,19 +373,12 @@ justify-content: center;
         height: 50vh;
     }
 
-    .image_pfp {
-        height: 25rem;
-        width: 30rem;
-    }
 
     .figure_pfp {
         height: 27rem;
         width: 22rem;
     }
-    .figure_pfp::before{
-        height: 27rem;
-        width: 22rem;
-    }
+
 
     /* ---------------About Section------------------ */
     .main_aboutus {
