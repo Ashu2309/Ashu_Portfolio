@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@200&family=Quicksand:wght@300&family=Roboto:wght@300;400&display=swap');
 :root {
     --main-color: rgb(132, 144, 255);
     --main-bgcolor: #2c3246;
@@ -21,8 +23,10 @@ html {
     font-size: 62.8%;
     scroll-behavior: smooth;
 }
-
-body {
+h1{
+    font-family: 'Roboto', sans-serif;
+     }
+    body {
     width: 100%;
     position: relative;
     background-color: hsl(206, 79%, 94%);
@@ -33,7 +37,14 @@ body {
     overflow-x: hidden;
     /* overflow: hidden;     */
 }
+h2{
+    font-family: 'Roboto', sans-serif;
 
+}
+p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
 span {
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
@@ -43,12 +54,17 @@ button a {
     text-decoration: none;
     color: inherit;
 }
+.main_icon{
 
+    border-radius: 40% !important;
+}
 .logo {
     margin-top: 0.5rem;
     height: 4.5rem;
     width: 13rem;
     border-radius: 1rem;
+    background-color: aliceblue;
+    box-shadow: 4px 3px 10px rgb(129, 201, 240);
 }
 
 .nav-head {
@@ -124,15 +140,15 @@ li.active::after, li a:hover::after {
     justify-content: center;
     align-items: center;
 }
-.main_head{
+.main_home_head{
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
 }
 
 .details {
-    height:calc(100vh - 60vh);
+    height:calc(100vh - 50vh);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -219,8 +235,7 @@ li.active::after, li a:hover::after {
 
 
 .picture {
-    height:calc(100vh - 60vh);
-
+    height:calc(100vh - 50vh);
     width: 100%;
     display: flex;
     justify-content: center;
@@ -260,8 +275,6 @@ li.active::after, li a:hover::after {
     height: 32rem;
     width: 22rem;
     /* position: absolute; */
-    top: -3rem;
-    left: -3rem;
     background: var(--main-bgcolor);
     display: flex;
     justify-content: center;
@@ -459,7 +472,6 @@ li.active::after, li a:hover::after {
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
     color: rgb(70, 64, 64);
-
     font-size: 5rem;
 }
 
@@ -750,13 +762,11 @@ div .row {
     background: var(--gradient);
     color: white;
     position: relative;
-    animation: zoom_pfp 1.5s infinite linear;
 
 }
 .ripple_btn{
     position: relative;
     overflow: hidden;
-
 }
 
 .overlay_btn_eff{
@@ -765,7 +775,6 @@ div .row {
     opacity: 0.5;
     border-radius: 50%;
     transform: translate(-50%,-50%);
-    animation: ripple_btn 0.8s linear;
 }
 @keyframes ripple_btn {
     from{
